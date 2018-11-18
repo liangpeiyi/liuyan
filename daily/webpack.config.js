@@ -43,10 +43,7 @@ var config = {
         ]
     },
     plugins: [
-        new ExtractTextPlugin({
-            filename: '[name].css',
-            allChunks: true
-        })
+        new ExtractTextPlugin("main.css")
     ]
 };
 

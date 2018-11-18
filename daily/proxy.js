@@ -7,7 +7,7 @@ const imgPort = 8011;
 
 // 创建一个 API 代理服务
 const apiServer = http.createServer((req, res) => {
-    const url = 'http://news-at.zhihu.com/api/4' + req.url;
+    const url = 'http://news-at.zhihu.com/api/3' + req.url;
     const options = {
         url: url
     };
@@ -21,6 +21,10 @@ const apiServer = http.createServer((req, res) => {
             // 返回代理后的内容
             res.end(body);
         }
+        // else {
+        //     console.log('api接口报错啦');
+        //     console.log(response.statusCode);
+        // }
     }
     request.get(options, callback);
 });
@@ -43,6 +47,10 @@ const imgServer = http.createServer((req, res) => {
             res.setHeader('Access-Control-Allow-Origin', '*');
             res.end(body);
         }
+        // else {
+        //     console.log('api接口报错啦');
+        //     console.log(response.statusCode);
+        // }
     }
     request.get(options, callback);
 });
