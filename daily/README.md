@@ -1,12 +1,15 @@
+运行方法：
+npm install
+npm run dev
+node proxy.js
+
+说明：
 安装request（node.js的request库）来做代理
 npm install request --save-dev
 启动代理
 node proxy.js
 安装axios（基于promise的http库）来做ajax请求
 npm install axios --save
-
-npm install
-npm run dev
 
 proxy.js 代理
 libs/util.js 封装工具函数
