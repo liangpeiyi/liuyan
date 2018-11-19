@@ -11,6 +11,7 @@ node proxy.js
 安装axios（基于promise的http库）来做ajax请求
 npm install axios --save
 
+
 proxy.js 代理
 libs/util.js 封装工具函数
 main.js 导入样式
