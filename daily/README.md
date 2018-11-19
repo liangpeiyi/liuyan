@@ -5,7 +5,7 @@ node proxy.js<br>
 
 说明：<br>
 安装request（node.js的request库）来做代理<br>
-npm install request --save-dev<br>  
+npm install request --save-dev<br> 
 启动代理<br>
 node proxy.js<br>
 安装axios（基于promise的http库）来做ajax请求<br>
